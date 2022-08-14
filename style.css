@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap");
+
+:root {
+  --pri-clr-soft-blue: hsl(215, 51%, 70%);
+  --pri-clr-cyan: hsl(178, 100%, 50%);
+
+  --net-clr-blue-main-bg: hsl(217, 54%, 11%);
+  --net-clr-blue-card-bg: hsl(216, 50%, 16%);
+  --net-clr-blue-line: hsl(215, 32%, 27%);
+  --net-clr-white: rgb(255, 255, 255);
+
+  --font-family: Outfit, sans-serif;
+
+  --font-wt-light: 300;
+  --font-wt-semibold: 400;
+  --font-wt-bold: 600;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+}
+body {
+  background: var(--net-clr-blue-main-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container {
+  background: var(--net-clr-blue-card-bg);
+  max-width: 330px;
+  max-height: 1000px;
+  border-radius: 10px;
+  padding: 25px;
+}
+.soft-blue {
+  color: var(--pri-clr-soft-blue);
+}
+.white {
+  color: var(--net-clr-white);
+}
+.container .para {
+  margin: 20px 0px;
+  font-weight: var(--font-wt-light);
+}
+.container .head {
+  margin: 20px 0px;
+  font-weight: var(--font-wt-bold);
+  font-size: 22px;
+}
+.container .box img:first-child {
+  width: 100%;
+}
+.container .box {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  border-radius: 5px;
+  max-height: 280px;
+}
+.container .box:hover .hover-stage {
+  cursor: pointer;
+  display: block;
+}
+.container .box .hover-stage {
+  position: absolute;
+  background-color: hsla(178, 100%, 50%, 0.596);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+}
+.container .box .hover-stage img {
+  width: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .price {
+  color: var(--pri-clr-cyan);
+  padding-right: 80px;
+  font-weight: var(--font-wt-semibold);
+}
+.container .line {
+  border-color: var(--net-clr-blue-line);
+}
+.container footer > img {
+  height: 25px;
+  width: 25px;
+  border-radius: 15px;
+  border: 1px solid white;
+  margin-right: 15px;
+}
+.container footer {
+  margin: 15px 0px;
+  display: flex;
+  align-items: center;
+}
+.container ul {
+  list-style: none;
+  display: flex;
+  margin: 15px 0px;
+}
+.container ul > li {
+  display: flex;
+  align-items: center;
+}
+.container ul > li > img {
+  padding-right: 7px;
+}
+.container footer .white:hover,
+.container .head:hover {
+  color: var(--pri-clr-cyan);
+  cursor: pointer;
+}
