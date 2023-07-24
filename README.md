@@ -1,1 +1,1 @@
-# Frontend-Mentor-NFT-preview-card-component-Project3
+# FrontendMentor-NFT_PreviewCardComponent
